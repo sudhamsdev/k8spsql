@@ -1,6 +1,6 @@
 resource "aws_ecs_service" "ecs_service" {
   name            = var.service_name
-  cluster         = data.aws_ecs_cluster.ecs_cluster_ds.cluster_name
+  cluster         = data.aws_ecs_cluster.ecs_cluster_name.cluster_name
   task_definition = aws_ecs_task_definition.servce_task.arn
   desired_count   = 1
   network_configuration {
