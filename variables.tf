@@ -54,14 +54,14 @@ variable "nlb_targetgroup_name" {
 
 variable "service_name" {
   description = "Provide ECS service name for PostgreSQL"
-  type = string
-  default = "k8spsql"
+  type        = string
+  default     = "k8spsql"
 }
 
 variable "container_name" {
   description = "Provide container name as per task definition section"
-  type = string
-  default = "k8spsql"
+  type        = string
+  default     = "k8spsql"
 }
 
 locals {

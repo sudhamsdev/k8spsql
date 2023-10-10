@@ -5,6 +5,13 @@ terraform {
       version = "5.20.0"
     }
   }
+
+  backend "s3" {
+    bucket         = "ecs-terraform-manifests"
+    key            = "production/k8sengineers/ecs/psql/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-visualpathtech"
+  }
 }
 
 provider "aws" {
