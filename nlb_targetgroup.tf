@@ -4,7 +4,7 @@ resource "aws_lb_target_group" "nlb_targetgroup" {
   protocol        = "TCP"
   target_type     = "ip"
   ip_address_type = "ipv4"
-  vpc_id          = data.aws_vpc.prod_vpc.id
+  vpc_id          = data.aws_vpc.ecs_vpc.id
 
   health_check {
     enabled             = true
