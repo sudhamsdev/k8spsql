@@ -16,7 +16,7 @@ resource "aws_iam_role" "task_role" {
             "aws:SourceAccount" : "438894829072"
           },
           "ArnLike" : {
-            "aws:SourceArn" : "arn:aws:ecs:ap-south-1:438894829072:*"
+            "aws:SourceArn" : "arn:aws:ecs:us-east-1:438894829072:*"
           }
         }
       }

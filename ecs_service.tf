@@ -23,5 +23,5 @@ resource "aws_ecs_service" "ecs_service" {
     container_port   = 5432
   }
 
-  wait_for_steady_state = true
+  #wait_for_steady_state = true
 }
