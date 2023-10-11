@@ -42,7 +42,7 @@ resource "aws_iam_policy" "ssm" {
         "Action" : [
           "ssm:GetParameters"
         ],
-        "Resource" : "arn:aws:ssm:ap-south-1:099730796456:parameter/*"
+        "Resource" : "arn:aws:ssm:ap-south-1:438894829072:parameter/*"
       }
     ]
   })
