@@ -18,7 +18,7 @@ resource "aws_ecs_task_definition" "servce_task" {
   container_definitions = jsonencode([
     {
       "name" : "k8spsql",
-      "image" : "438894829072.dkr.ecr.us-east-1.amazonaws.com/k8sengineerspsql:latest",
+      "image" : "438894829072.dkr.ecr.us-east-1.amazonaws.com/k8sengineerspsql:1.1.0",
       "portMappings" : [
         {
           "name" : "k8spsql-5432-tcp",
