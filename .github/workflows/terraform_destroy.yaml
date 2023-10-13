@@ -46,7 +46,6 @@ jobs:
 
       - name: Destroy NLB and ECS Service for K8SEngineers PSQL Production environment
         run: |
-          cd postgres/
           echo "NLB and ECS Service: Initialize Terraform"
           terraform init || terraform init -reconfigure
 
